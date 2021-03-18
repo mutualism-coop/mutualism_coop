@@ -1,5 +1,6 @@
 # mutualism_coop
-Website for mutualism.coop
+Website for mutualism.coop made with [Wagtail](https://wagtail.io)
 
 ## Development
-This website is made using [Wagtail](https://wagtail.io)
+This project uses [pre-commit](https://pre-commit.com).
+[Install it](https://pre-commit.com/#install) and then run `pre-commit install`.
