@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mutualism_coop"
+version = "0.1.0"
+description = "Website for mutualism.coop"
+authors = ["dtluna <dtluna@riseup.net>"]
+license = "AGPL v3.0"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+wagtail = "^2.12.3"
+Django = "^3.1.7"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
