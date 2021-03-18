@@ -3,7 +3,7 @@ name = "mutualism_coop"
 version = "0.1.0"
 description = "Website for mutualism.coop"
 authors = ["dtluna <dtluna@riseup.net>"]
-license = "AGPL v3.0"
+license = "AGPL-3.0-or-later"
 
 [tool.poetry.dependencies]
 python = "^3.9"
