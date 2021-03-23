@@ -1,4 +1,4 @@
-{% load static wagtailuserbar bootstrap4 %}
+{% load static wagtailuserbar bootstrap4 i18n %}
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -37,7 +37,8 @@
 
         {# Display django.contrib.messages as Bootstrap alerts #}
         {% bootstrap_messages %}
-        {% block content %}{% endblock %}
+
+        <div class="container">{% block content %}{% endblock %}<div>
 
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/mutualism_coop.js' %}"></script>
