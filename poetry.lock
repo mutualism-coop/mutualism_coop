@@ -397,6 +397,14 @@ optional = false
 python-versions = ">=3.6"
 
 [[package]]
+name = "polib"
+version = "1.1.0"
+description = "A library to manipulate gettext files (po and mo files)."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "pre-commit"
 version = "2.11.1"
 description = "A framework for managing and maintaining multi-language pre-commit hooks."
@@ -605,6 +613,23 @@ docs = ["pyenchant (>=3.1.1,<4)", "sphinxcontrib-spelling (>=5.4.0,<6)", "Sphinx
 testing = ["python-dateutil (>=2.2)", "pytz (>=2014.7)", "elasticsearch (>=5.0,<6.0)", "Jinja2 (>=2.8,<3.0)", "boto3 (>=1.16,<1.17)", "freezegun (>=0.3.8)", "openpyxl (>=2.6.4)", "Unidecode (>=0.04.14,<2.0)", "coverage (>=3.7.0)", "flake8 (>=3.6.0)", "isort (==5.6.4)", "flake8-blind-except (==0.1.1)", "flake8-print (==2.0.2)", "doc8 (==0.8.1)", "jinjalint (>=0.5)", "docutils (==0.15)", "django-taggit (>=1.3.0,<2.0)"]
 
 [[package]]
+name = "wagtail-localize"
+version = "0.9.5"
+description = "Translation plugin for Wagtail CMS"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+Django = ">=2.2,<3.2"
+polib = ">=1.1,<2.0"
+Wagtail = ">=2.11,<3"
+
+[package.extras]
+documentation = ["mkdocs (==1.1.2)", "mkdocs-material (==6.2.8)", "mkdocs-mermaid2-plugin (==0.5.1)", "mkdocstrings (==0.14.0)", "mkdocs-include-markdown-plugin (==2.8.0)"]
+testing = ["dj-database-url (==0.5.0)", "freezegun (==0.3.15)"]
+
+[[package]]
 name = "webencodings"
 version = "0.5.1"
 description = "Character encoding aliases for legacy web content"
@@ -660,7 +685,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "42de59f57deb5775397e83ecf21db7bcfb58d687741ebe9b9d205ac3cc9a73b1"
+content-hash = "3a49423f10ffc5b0d218157accd48e7709155ca0455a0ffc4fd312afcf9be04b"
 
 [metadata.files]
 anyascii = [
@@ -860,6 +885,10 @@ pillow = [
     {file = "Pillow-8.1.2-pp37-pypy37_pp73-win32.whl", hash = "sha256:f36c3ff63d6fc509ce599a2f5b0d0732189eed653420e7294c039d342c6e204a"},
     {file = "Pillow-8.1.2.tar.gz", hash = "sha256:b07c660e014852d98a00a91adfbe25033898a9d90a8f39beb2437d22a203fc44"},
 ]
+polib = [
+    {file = "polib-1.1.0-py2.py3-none-any.whl", hash = "sha256:93b730477c16380c9a96726c54016822ff81acfa553977fdd131f2b90ba858d7"},
+    {file = "polib-1.1.0.tar.gz", hash = "sha256:fad87d13696127ffb27ea0882d6182f1a9cf8a5e2b37a587751166c51e5a332a"},
+]
 pre-commit = [
     {file = "pre_commit-2.11.1-py2.py3-none-any.whl", hash = "sha256:94c82f1bf5899d56edb1d926732f4e75a7df29a0c8c092559c77420c9d62428b"},
     {file = "pre_commit-2.11.1.tar.gz", hash = "sha256:de55c5c72ce80d79106e48beb1b54104d16495ce7f95b0c7b13d4784193a00af"},
@@ -1018,6 +1047,10 @@ virtualenv = [
 wagtail = [
     {file = "wagtail-2.12.3-py3-none-any.whl", hash = "sha256:28a7f8d1363891c3bbf16726f1dc1ef0fa2487153e6a4b71e8eb9bc31b0f355c"},
     {file = "wagtail-2.12.3.tar.gz", hash = "sha256:15bdca888410fae0586767eedddf0205ee676653171da2d45792a739814d3587"},
+]
+wagtail-localize = [
+    {file = "wagtail-localize-0.9.5.tar.gz", hash = "sha256:4d6ad96ac160324e8fdae2fdae3abd65f9235f1e327fc5e17ef495c66c2fa8e0"},
+    {file = "wagtail_localize-0.9.5-py3-none-any.whl", hash = "sha256:6d053043250e29e94db706c852e7e1100a9b3ff2522b237fe338915a6ebdd596"},
 ]
 webencodings = [
     {file = "webencodings-0.5.1-py2.py3-none-any.whl", hash = "sha256:a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78"},

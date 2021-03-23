@@ -13,6 +13,7 @@ django-debug-toolbar = "^3.2"
 django-bootstrap4 = "^2.3.1"
 django-icons = "^2.2.1"
 fontawesome-free = "^5.15.3"
+wagtail-localize = "^0.9.5"
 
 [tool.poetry.dev-dependencies]
 black = "*"
