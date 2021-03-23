@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "bootstrap4",
+    "fontawesome-free",
+    "django_icons",
 ]
 
 MIDDLEWARE = [
@@ -149,3 +151,7 @@ WAGTAIL_SITE_NAME = "mutualism_coop"
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 BASE_URL = "http://example.com"
+
+DJANGO_ICONS = {
+    "ICONS": {"language": {"name": "far fa-language"},},
+}

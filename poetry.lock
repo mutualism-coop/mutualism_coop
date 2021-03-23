@@ -178,6 +178,20 @@ python-versions = ">=3.5"
 Django = ">=2.2"
 
 [[package]]
+name = "django-icons"
+version = "2.2.1"
+description = "Icons for Django"
+category = "main"
+optional = false
+python-versions = ">=3.6,<4.0"
+
+[package.dependencies]
+django = ">=2.2,<4.0"
+
+[package.extras]
+docs = ["sphinx (>=2.4,<3.0)", "sphinx_rtd_theme (>=0.4.3,<0.5.0)", "m2r2 (>=0.2.5,<0.3.0)"]
+
+[[package]]
 name = "django-modelcluster"
 version = "5.1"
 description = "Django extension to allow working with 'clusters' of models as a single unit, independently of the database"
@@ -250,6 +264,14 @@ name = "filelock"
 version = "3.0.12"
 description = "A platform independent file lock."
 category = "dev"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "fontawesome-free"
+version = "5.15.3"
+description = "Font Awesome Free"
+category = "main"
 optional = false
 python-versions = "*"
 
@@ -638,7 +660,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "bd5c58229a455027e8e5ab14fac68753d402a02d859104f62a0de103c14283e5"
+content-hash = "42de59f57deb5775397e83ecf21db7bcfb58d687741ebe9b9d205ac3cc9a73b1"
 
 [metadata.files]
 anyascii = [
@@ -705,6 +727,10 @@ django-filter = [
     {file = "django-filter-2.4.0.tar.gz", hash = "sha256:84e9d5bb93f237e451db814ed422a3a625751cbc9968b484ecc74964a8696b06"},
     {file = "django_filter-2.4.0-py3-none-any.whl", hash = "sha256:e00d32cebdb3d54273c48f4f878f898dced8d5dfaad009438fe61ebdf535ace1"},
 ]
+django-icons = [
+    {file = "django-icons-2.2.1.tar.gz", hash = "sha256:11cd4aa061cd5baa6924c9c4e46b0ccfd08797f51625531c1aa16ec88e967400"},
+    {file = "django_icons-2.2.1-py3-none-any.whl", hash = "sha256:20b85014beffb8edc8e7bc001fd240ca23031736857bdc92d13155e744547fa4"},
+]
 django-modelcluster = [
     {file = "django-modelcluster-5.1.tar.gz", hash = "sha256:783d177f7bf5c8f30fe365c347b9a032920de371fe1c63d955d7b283684d4c08"},
     {file = "django_modelcluster-5.1-py2.py3-none-any.whl", hash = "sha256:d4a0f90e85ae1a193f417e149b6b01d0b2a867dcf97f7fae1d34a4363a9d7baa"},
@@ -730,6 +756,9 @@ et-xmlfile = [
 filelock = [
     {file = "filelock-3.0.12-py3-none-any.whl", hash = "sha256:929b7d63ec5b7d6b71b0fa5ac14e030b3f70b75747cef1b10da9b879fef15836"},
     {file = "filelock-3.0.12.tar.gz", hash = "sha256:18d82244ee114f543149c66a6e0c14e9c4f8a1044b5cdaadd0f82159d6a6ff59"},
+]
+fontawesome-free = [
+    {file = "fontawesome_free-5.15.3-py3-none-any.whl", hash = "sha256:8f27fff78ab6dcad5766a1479f22e86aae2fab0e86fcf92524e7eaed498f3edc"},
 ]
 html5lib = [
     {file = "html5lib-1.1-py2.py3-none-any.whl", hash = "sha256:0d78f8fde1c230e99fe37986a60526d7049ed4bf8a9fadbad5f00e22e58e041d"},

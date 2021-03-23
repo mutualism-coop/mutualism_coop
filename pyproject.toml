@@ -11,6 +11,8 @@ wagtail = "^2.12.3"
 Django = "^3.1.7"
 django-debug-toolbar = "^3.2"
 django-bootstrap4 = "^2.3.1"
+django-icons = "^2.2.1"
+fontawesome-free = "^5.15.3"
 
 [tool.poetry.dev-dependencies]
 black = "*"
