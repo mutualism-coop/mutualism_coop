@@ -1,4 +1,4 @@
-{% load static wagtailuserbar %}
+{% load static wagtailuserbar bootstrap4 %}
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -19,6 +19,11 @@
 
         {# Global stylesheets #}
         <link rel="stylesheet" type="text/css" href="{% static 'css/mutualism_coop.css' %}">
+        {# Load CSS and JavaScript #}
+        {% bootstrap_css %}
+        {% bootstrap_javascript jquery='full' %}
+
+
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
@@ -28,6 +33,10 @@
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
 
+        {% include "header.html" %}
+
+        {# Display django.contrib.messages as Bootstrap alerts #}
+        {% bootstrap_messages %}
         {% block content %}{% endblock %}
 
         {# Global javascript #}
