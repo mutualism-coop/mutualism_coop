@@ -19,6 +19,7 @@ wagtail-localize = "^0.9.5"
 black = "*"
 pre-commit = "*"
 pylint = "*"
+ipython = "^7.22.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
