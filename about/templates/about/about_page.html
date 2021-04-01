@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags i18n %}
+
+{% block title %} {% translate "About Mutualism.coop" %} {% endblock %}
+
+{% block content %}
+
+  {{ self.content|richtext }}
+
+{% endblock %}
