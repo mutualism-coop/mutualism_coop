@@ -5,7 +5,9 @@
 {% block title %} {% translate "About Mutualism.coop" %} {% endblock %}
 
 {% block content %}
-
-  {{ self.content|richtext }}
-
+  <div class="row">
+    <div class="col-sm">
+      {{ self.content|richtext }}
+    </div>
+  </div>
 {% endblock %}
