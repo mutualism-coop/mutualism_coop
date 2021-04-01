@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags wagtailimages_tags i18n %}
+
+{% block title %} {{ self.title }} {% endblock %}
+
+{% block content %}
+  {% image self.image fill-1920x540-c100 as banner %}
+  <img src="{{ banner.url }}" class="img-fluid" alt="{{ self.image.title }}">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h1>{{ self.title }}</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm">
+        TODO: author name with URL | {{ self.first_published_at }}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm">
+        {# here goes the embed for audio #}
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-sm">
+        {{ self.content|richtext }}
+      </div>
+    </div>
+  <div>
+{% endblock %}
