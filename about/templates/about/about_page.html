@@ -2,12 +2,14 @@
 
 {% load wagtailcore_tags i18n %}
 
-{% block title %} {% translate "About Mutualism.coop" %} {% endblock %}
+{% block title %} {% translate "About" %} {% endblock %}
 
 {% block content %}
-  <div class="row">
-    <div class="col-sm">
-      {{ self.content|richtext }}
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        {{ self.content|richtext }}
+      </div>
     </div>
   </div>
 {% endblock %}
