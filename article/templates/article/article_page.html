@@ -17,7 +17,9 @@
 
     <div class="row">
       <div class="col-sm">
-        TODO: author name with URL | {{ self.first_published_at }}
+          {% with self.first_published_at as published_at %}
+          {{ self.author.name }} {% if published_at %} | {{ published_at }} {% endif %}
+          {% endwith %}
       </div>
     </div>
 
